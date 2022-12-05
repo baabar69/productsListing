@@ -14,10 +14,13 @@
     "start-js": "react-app-rewired start",
     "build": "react-app-rewired build",
     "start-build": "http-server ./build",
-    "test": "react-app-rewired test",
+    "test": "jest --coverage --verbose --runInBand",
     "eject": "react-app-rewired eject"
   },
   "dependencies": {
+    "@testing-library/dom": "^8.19.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
     "@types/history": "^4.7.3",
     "@types/jest": "^24.0.10",
     "@types/node": "^11.10.5",

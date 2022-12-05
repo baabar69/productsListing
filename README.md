@@ -1,5 +1,18 @@
 # Innostark
 
+# Problem Statement:
+
+Write a simple application to manage production.
+
+• The application should have a listing of products
+• The user can add a new product and persist the changes
+• The product will have Name, Description, Price, Inventory Date
+
+## Bonus:
+
+• Products can be search
+• When refresh the page (ctrl + f5) the products are still persisted.
+
 ## Features
 
 - TypeScript language

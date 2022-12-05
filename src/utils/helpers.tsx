@@ -1,1 +1,9 @@
-export const sum = (a: number, b: number): number => a + b;
+export const isNullish = (obj: object) => {
+  return Object.values(obj).some((value) => {
+    if (value === '') {
+      return true;
+    }
+
+    return false;
+  });
+};

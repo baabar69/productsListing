@@ -1,13 +1,32 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { PageHeader } from 'antd';
+import { Button, Layout } from 'antd';
+
+import history from '@utils/history';
 
 import './styles.less';
 
-const Header = () => {
-  const { t } = useTranslation('header');
+const { Header: PageHeader } = Layout;
 
-  return <PageHeader title={t('title')} />;
+const Header = () => {
+  const handleRedirect = () => {
+    history.push('/product/new');
+  };
+
+  return (
+    <PageHeader className="container">
+      <div className="wrapper">
+        <span className="logo">
+          <img src="https://img.icons8.com/doodle/2x/duolingo-logo.png" alt="logo" />
+          <div className="heading">InnoStark Products Listing</div>
+        </span>
+        <span className="action-button">
+          <Button type="primary" onClick={handleRedirect}>
+            Add new Product
+          </Button>
+        </span>
+      </div>
+    </PageHeader>
+  );
 };
 
 export default Header;
