@@ -1,0 +1,134 @@
+.layout__header {
+  background: rgb(255, 255, 255);
+  -webkit-box-shadow: 0 1px 4px 0 rgba(199, 189, 199, 1);
+  -moz-box-shadow: 0 1px 4px 0 rgba(199, 189, 199, 1);
+  box-shadow: 0 1px 4px 0 rgba(199, 189, 199, 1);
+  position: relative;
+  z-index: 1;
+
+  .ant-menu-item:hover::after {
+    border-bottom: 4px solid #0872ba !important;
+  }
+
+  .ant-menu-item-selected::after {
+    border-bottom: 4px solid #0872ba !important;
+  }
+
+  .ant-menu-item-selected {
+    font-weight: 600 !important;
+  }
+
+  .ant-menu-overflow {
+    display: block;
+  }
+}
+
+.layout__header-logo {
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+
+.auth__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 3%;
+  width: 30%;
+}
+
+.hover-underline:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.goto-login {
+  text-align: center;
+}
+
+.goto__forgot--password {
+  margin-top: -1.5rem !important;
+  text-align: right;
+  text-decoration: underline !important;
+}
+
+.navbar {
+  text-align: right !important;
+  width: 100%;
+}
+
+.navbar__label {
+  color: #000;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 400;
+
+  &:hover {
+    color: #0872ba;
+    font-weight: 600;
+  }
+}
+
+.profile__icon {
+  background: #27a4ff;
+  clip-path: circle();
+  color: white;
+  margin-right: 0.5rem;
+  padding: 1rem;
+}
+
+.layout__wrapper {
+  background: rgb(255, 255, 255);
+  height: 100vh;
+  padding: 2rem 3rem;
+  padding-bottom: 0;
+}
+
+thead[class*='ant-table-thead'] th {
+  background-color: rgb(255, 255, 255) !important;
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+
+.ant-table-thead > tr > th,
+.ant-table-tbody > tr > td,
+.ant-table tfoot > tr > th,
+.ant-table tfoot > tr > td {
+  padding: 18px 16px;
+}
+// to remove the borders of the table header
+thead[class*='ant-table-thead'] th::before {
+  all: unset !important;
+}
+
+.ant__tabs--top--dashborad .ant-tabs-nav {
+  margin: 0 !important;
+}
+
+.ant__table--wrapper--dashboard .ant-table-cell {
+  padding-left: 0 !important;
+}
+
+.navbar__dropdown {
+  padding: 0.5rem;
+}
+
+.ant-divider-horizontal {
+  margin: 10px 0;
+}
+
+.nodata__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .nodata__layout--btn {
+    padding: 1px 8px;
+    border-radius: 2px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+    font-weight: 400;
+    margin-top: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+}
